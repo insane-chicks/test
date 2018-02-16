@@ -1,0 +1,19 @@
+version: '1'
+debug: false
+
+timeout: 60s
+
+envvars:
+  - TRIGGER_DOWNSTREAMS=yes
+
+commands:
+  - sleep 3 && echo test done
+
+downstreams:
+  - pipelines:
+      - ${TEST_REPO_NAME}
+    envvars:
+      - TRIGGER_DOWNSTREAMS=no
+    when:
+      envvars:
+        TRIGGER_DOWNSTREAM: yes
