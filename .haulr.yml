@@ -16,4 +16,4 @@ downstreams:
       - TRIGGER_DOWNSTREAMS=no
     when:
       envvars:
-        TRIGGER_DOWNSTREAM: yes
+        - TRIGGER_DOWNSTREAMS=yes
