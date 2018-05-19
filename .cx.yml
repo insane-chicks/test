@@ -11,9 +11,9 @@ commands:
 
 downstreams:
   - pipelines:
-      - ${TEST_REPO_NAME}
+      - unknown
     envvars:
       - TRIGGER_DOWNSTREAMS=no
-    when:
-      envvars:
-        - TRIGGER_DOWNSTREAMS=yes
+#    when:
+#      envvars:
+#        - TRIGGER_DOWNSTREAMS=yes
