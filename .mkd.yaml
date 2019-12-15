@@ -3,18 +3,10 @@ debug: false
 
 timeout: 60s
 
-envvars:
-  - TRIGGER_DOWNSTREAMS=yes
-
 commands:
   - sleep 3 && echo test done
 
 downstreams:
   - pipelines:
       - unknown
-      - insane-chicks/down
-    envvars:
-      - TRIGGER_DOWNSTREAMS=no
-#    when:
-#      envvars:
-#        - TRIGGER_DOWNSTREAMS=yes
+      - insane-chicks/long
