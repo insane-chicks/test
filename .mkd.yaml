@@ -9,4 +9,4 @@ commands:
 downstreams:
   - pipelines:
       - unknown
-      - insane-chicks/long
+      - insane-chicks/down
